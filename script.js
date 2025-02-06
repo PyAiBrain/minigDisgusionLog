@@ -68,6 +68,7 @@ function displayDocuments(docs) {
   container.appendChild(title)
 
   container.addEventListener("click", () => open("https://1drv.ms/x/c/3b71125f56229e64/EWSAK9z--pJMkXQiA2NaLMgBJS8YVbpxu3tDdEsE_7gt5w"))
+  documentGrid.appendChild(container)
 
   docs.forEach((doc) => {
     const docElement = createDocumentElement(doc)
