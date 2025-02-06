@@ -56,7 +56,6 @@ function downloadDocument(doc) {
 }
 
 function displayDocuments(docs) {
-  documentGrid.innerHTML = ""
   docs.forEach((doc) => {
     const docElement = createDocumentElement(doc)
     documentGrid.appendChild(docElement)
