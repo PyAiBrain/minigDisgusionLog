@@ -56,6 +56,19 @@ function downloadDocument(doc) {
 }
 
 function displayDocuments(docs) {
+  documentGrid.innerHTML = ""
+
+  const container = document.createElement("div")
+  container.className = "document-container"
+
+  const title = document.createElement("h2")
+  title.className = "document-title"
+  title.textContent = "CPU / GPU Tabelle"
+
+  container.appendChild(title)
+
+  container.addEventListener("click", () => open("https://1drv.ms/x/c/3b71125f56229e64/EWSAK9z--pJMkXQiA2NaLMgBJS8YVbpxu3tDdEsE_7gt5w"))
+
   docs.forEach((doc) => {
     const docElement = createDocumentElement(doc)
     documentGrid.appendChild(docElement)
